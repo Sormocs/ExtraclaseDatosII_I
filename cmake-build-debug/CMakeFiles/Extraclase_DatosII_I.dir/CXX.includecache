@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/PROGRA/CLion/Extraclase_DatosII_I/Collector.h
+Node.h
+D:/PROGRA/CLion/Extraclase_DatosII_I/Node.h
+iostream
+-
+
+D:/PROGRA/CLion/Extraclase_DatosII_I/List.cpp
+iostream
+-
+List.h
+D:/PROGRA/CLion/Extraclase_DatosII_I/List.h
+Collector.h
+D:/PROGRA/CLion/Extraclase_DatosII_I/Collector.h
+
+D:/PROGRA/CLion/Extraclase_DatosII_I/List.h
+Node.h
+D:/PROGRA/CLion/Extraclase_DatosII_I/Node.h
+Collector.h
+D:/PROGRA/CLion/Extraclase_DatosII_I/Collector.h
+
+D:/PROGRA/CLion/Extraclase_DatosII_I/Node.h
+iostream
+-
+Collector.h
+D:/PROGRA/CLion/Extraclase_DatosII_I/Collector.h
+
