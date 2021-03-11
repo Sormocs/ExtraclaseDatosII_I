@@ -10,14 +10,16 @@ class List {
 private:
     Node *start = NULL;
     Node *end = NULL;
-    Collector *collector = new Collector();
+    //static Collector *collector;
 public:
+
     List();
     void Insert(int num);
     void InsertFirst(int num);
     void Delete(int num);
     void Show();
     void ShowC();
+    static Collector* GetCollector();
 };
 
 

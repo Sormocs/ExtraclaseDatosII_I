@@ -17,7 +17,7 @@ public:
     int GetNum();
     Node * GetNext();
     void SetNext(Node *node);
-    void* operator new(size_t size, void*, int);
+    void* operator new(size_t size, void*);
     void operator delete(void*);
 
 };

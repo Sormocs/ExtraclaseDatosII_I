@@ -18,9 +18,11 @@ class Collector {
 private:
     Address *start = NULL;
     Address *end = NULL;
+    static Collector* instance;
 
 public:
-    Collector();
+    //Collector();
+    static Collector* GetInstance();
     void Insert(void* em_address);
     void* GetAddress();
     void Show();

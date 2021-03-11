@@ -1,6 +1,7 @@
 #include "Collector.h"
 #include <iostream>
 
+Collector *Collector::instance = nullptr;
 Address::Address() {}
 
 void Address::SetNext(Address* next_dir) {
@@ -19,7 +20,14 @@ void * Address::GetDir() {
     return dir;
 }
 
-Collector::Collector() {}
+//Collector::Collector() {}
+
+Collector* Collector::GetInstance() {
+    if (instance == nullptr){
+        instance = new Collector;
+    }
+    return instance;
+}
 
 void Collector::Insert(void* em_address) {
 

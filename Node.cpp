@@ -20,7 +20,7 @@ Node * Node::GetNext() {
     return next;
 }
 
-void * Node::operator new(size_t size, void* address, int num) {
+void * Node::operator new(size_t size, void* address) {
 
     if (address == NULL){
         Node* new_node = ::new Node();
@@ -31,6 +31,6 @@ void * Node::operator new(size_t size, void* address, int num) {
     }
 }
 
-void Node::operator delete(void * del_dir) noexcept {
-    free(del_dir);
-}
+//void Node::operator delete(void * del_dir) noexcept {
+//    free(del_dir);
+//}

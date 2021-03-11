@@ -12,15 +12,20 @@ int main() {
     lista->Show();
     lista->Delete(3);
     lista->Delete(4);
-    std::cout << "borrado" << std::endl;
     lista->Show();
     lista->ShowC();
     lista->Insert(6);
-    std::cout << "6 Metido" << std::endl;
+    lista->Insert(7);
     lista->Show();
-    //std::cout << "6 insertado" << std::endl;
-    //lista->ShowC();
-    std::cout << "terminado" << std::endl;
+
+//    lista->Insert(2);
+//    lista->Show();
+//    lista->ShowC();
+//    lista->Delete(2);
+//    lista->ShowC();
+//    lista->Insert(2);
+//    lista->Show();
+//    lista->ShowC();
 
 
     return 0;
