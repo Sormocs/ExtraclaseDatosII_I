@@ -1,7 +1,13 @@
+/**
+ * @file main.cpp
+ * @author Sergio_Martinez
+ * @title Archivo_Main
+ */
 #include <iostream>
 #include "List.h"
 int main() {
 
+    //Lista para probar funcionamiento
     List *lista = new List();
     lista->Insert(2);
     lista->Insert(3);
@@ -12,6 +18,7 @@ int main() {
     lista->Show();
     lista->Delete(3);
     lista->Delete(4);
+    std::cout << "Elimina 3 y 4" << std::endl;
     lista->Show();
     lista->ShowC();
     lista->Insert(6);

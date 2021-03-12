@@ -26,7 +26,6 @@ void * Node::operator new(size_t size, void* address) {
         Node* new_node = ::new Node();
         return new_node;
     } else{
-        std::cout << "address " << address << std::endl;
         return address;
     }
 }

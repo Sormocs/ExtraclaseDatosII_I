@@ -53,7 +53,6 @@ void * Collector::GetAddress() {
     }else {
         void *address = start->GetDir();
         start = start->GetNext();
-        std::cout << "address returned: " << address << std::endl;
         return address;
     }
 }

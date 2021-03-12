@@ -1,6 +1,5 @@
 #include <iostream>
 #include "List.h"
-#include "Collector.h"
 
 using namespace std;
 
@@ -63,6 +62,7 @@ void List::Delete(int num) {
 
 void List::Show() {
     Node *current = start;
+    cout << "Lista (num) (direccion): ";
     while (current != NULL){
         cout <<  current->GetNum() << " (" << current << ") -> ";
         current = current->GetNext();
