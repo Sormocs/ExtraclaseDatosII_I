@@ -1,10 +1,16 @@
+/**
+ * @file List.h
+ * @brief Declaracion de la clase lista, que conforma la lista enlazada que contiene los numeros.
+ */
+
 #pragma once
 #include "Node.h"
 #include "Collector.h"
-//#ifndef UNTITLED_LIST_H
-//#define UNTITLED_LIST_H
 
-
+/**
+ * @brief Declaracion de la clase lista, que contiene a los numeros que se ingresen en la misma. Contiene instancaias
+ * de la clase nodo.
+ */
 class List {
 
 private:
@@ -22,5 +28,3 @@ public:
     static Collector* GetCollector();
 };
 
-
-//#endif //UNTITLED_LIST_H

@@ -6,17 +6,35 @@
 
 #IncludeRegexTransform: 
 
+D:/PROGRA/CLion/Extraclase_DatosII_I/Collector.cpp
+Collector.h
+D:/PROGRA/CLion/Extraclase_DatosII_I/Collector.h
+iostream
+-
+
 D:/PROGRA/CLion/Extraclase_DatosII_I/Collector.h
 Node.h
 D:/PROGRA/CLion/Extraclase_DatosII_I/Node.h
 iostream
 -
 
+D:/PROGRA/CLion/Extraclase_DatosII_I/List.cpp
+iostream
+-
+List.h
+D:/PROGRA/CLion/Extraclase_DatosII_I/List.h
+
 D:/PROGRA/CLion/Extraclase_DatosII_I/List.h
 Node.h
 D:/PROGRA/CLion/Extraclase_DatosII_I/Node.h
 Collector.h
 D:/PROGRA/CLion/Extraclase_DatosII_I/Collector.h
+
+D:/PROGRA/CLion/Extraclase_DatosII_I/Node.cpp
+Node.h
+D:/PROGRA/CLion/Extraclase_DatosII_I/Node.h
+stdlib.h
+-
 
 D:/PROGRA/CLion/Extraclase_DatosII_I/Node.h
 iostream

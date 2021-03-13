@@ -1,10 +1,21 @@
+/**
+ * @file List.cpp
+ * @brief Definiciones de los metodos de la clas lista declarada en Lista.h
+ */
+
 #include <iostream>
 #include "List.h"
 
 using namespace std;
-
+/**
+ * @brief Constructor de la clase lista.
+ */
 List::List() {}
 
+/**
+ * @brief Inserta el numero introducido a la lista enlazada. Recibe un entero.
+ * @param in_num
+ */
 void List::Insert(int in_num) {
 
     if (start == NULL){
@@ -23,6 +34,10 @@ void List::Insert(int in_num) {
     }
 }
 
+/**
+ * @brief Misma funcionalidad del metodo regular de Insert, pero esta lo inserta al inicio de la lista. Recibe el int.
+ * @param in_num
+ */
 void List::InsertFirst(int in_num) {
 
     if (start == NULL){
@@ -43,6 +58,11 @@ void List::InsertFirst(int in_num) {
     }
 }
 
+/**
+ * @brief Metodo delete para eliminar un numero de la lista y enviar la direccion que contenia su nodo al collector
+ * para que sea reciclada. Recibe el numero que se desea eliminar.
+ * @param num
+ */
 void List::Delete(int num) {
 
     Node *current = start;
@@ -59,7 +79,9 @@ void List::Delete(int num) {
         }
     }
 }
-
+/**
+ * @brief Metodo show para mostrar los elementos de la lista junto con la direccion de memoria en la que se encuentran.
+ */
 void List::Show() {
     Node *current = start;
     cout << "Lista (num) (direccion): ";
@@ -70,11 +92,17 @@ void List::Show() {
     cout << "" << endl;
 }
 
+/**
+ * @brief Metodo que llama al metodo show del collector para mostrar las direcciones dentro de collector.
+ */
 void List::ShowC() {
     Collector::GetInstance()->Show();
 }
 
-
+/**
+ * @brief Overload del metodo delete declarado en Node.h
+ * @param del_dir
+ */
 void Node::operator delete(void * del_dir) noexcept {
     Collector::GetInstance()->Insert((void*)del_dir);
 }

@@ -1,9 +1,14 @@
+/**
+ * @file Node.h
+ * @brief Header donde se declara la clase del nodo que compone a list.
+ */
+
 #pragma once
 #include <iostream>
 #include "Collector.h"
-//#ifndef UNTITLED_NODE_H
-//#define UNTITLED_NODE_H
-
+/**
+ * @brief Clase nodo que almacena un numero que se inserto en list y contiene una referencia al siguiente nodo de list.
+ */
 class Node {
 
 private:
@@ -22,5 +27,3 @@ public:
 
 };
 
-
-//#endif //UNTITLED_NODE_H

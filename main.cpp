@@ -1,10 +1,15 @@
 /**
  * @file main.cpp
  * @author Sergio_Martinez
- * @title Archivo_Main
+ * @brief Funcion main para correr el programa, crea una lista y le inserta y borra numeros para
+ * ejemplificar el funcionamiento de programa.
  */
 #include <iostream>
 #include "List.h"
+/**
+ * @brief Funcion main para ejecutar el programa.
+ * @return Un entero.
+ */
 int main() {
 
     //Lista para probar funcionamiento
