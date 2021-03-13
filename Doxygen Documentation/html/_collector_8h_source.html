@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Extraclase 1 Datos II: Fichero Fuente Collector.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Extraclase 1 Datos II
+   </div>
+   <div id="projectbrief">Lista enlazada que recicla direcciones de nodos eliminados.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Collector.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_collector_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_node_8h.html">Node.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_address.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_address.html">Address</a>{</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">void</span>* dir;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="class_address.html">Address</a>* next= NULL;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="class_address.html#a63f910c09d93bdd16d3744e47d13dc0e">Address</a>();</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_address.html#aae8982ab33db98cd3d58edb17799df6a">SetDir</a>(<span class="keywordtype">void</span>* dir);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_address.html#ae25f4f7e08a3a606c0ead9765d215190">SetNext</a>(<a class="code" href="class_address.html">Address</a>* next);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="class_address.html">Address</a>* <a class="code" href="class_address.html#a6dae7b196e681eb396f1d5c86b499c06">GetNext</a>();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">void</span>* <a class="code" href="class_address.html#afe617c80f563af2fd3c75a6f4e5d8d77">GetDir</a>();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;};</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_collector.html">   27</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_collector.html">Collector</a> {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="class_address.html">Address</a> *start = NULL;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="class_address.html">Address</a> *end = NULL;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_collector.html">Collector</a>* instance;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="comment">//Collector();</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_collector.html">Collector</a>* <a class="code" href="class_collector.html#aace8c19a94c92944c4095045cda32975">GetInstance</a>();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_collector.html#ae7cf82d578c916c600653233df4e4fc4">Insert</a>(<span class="keywordtype">void</span>* em_address);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span>* <a class="code" href="class_collector.html#a66e0c5c3c467c197ad9d89f75b1cd690">GetAddress</a>();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_collector.html#a47b2f274b24fe4860ddbe09a3967b01f">Show</a>();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_collector.html#adca392da66de96fa7c4b49ebd35354ab">isEmpty</a>();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;};</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="ttc" id="a_node_8h_html"><div class="ttname"><a href="_node_8h.html">Node.h</a></div><div class="ttdoc">Header donde se declara la clase del nodo que compone a list.</div></div>
+<div class="ttc" id="aclass_address_html"><div class="ttname"><a href="class_address.html">Address</a></div><div class="ttdoc">Clase address que representa los nodos de la lista enlazada que constituye al collector.</div><div class="ttdef"><b>Definition:</b> Collector.h:12</div></div>
+<div class="ttc" id="aclass_address_html_a63f910c09d93bdd16d3744e47d13dc0e"><div class="ttname"><a href="class_address.html#a63f910c09d93bdd16d3744e47d13dc0e">Address::Address</a></div><div class="ttdeci">Address()</div><div class="ttdoc">Constructor del address.</div><div class="ttdef"><b>Definition:</b> Collector.cpp:14</div></div>
+<div class="ttc" id="aclass_address_html_a6dae7b196e681eb396f1d5c86b499c06"><div class="ttname"><a href="class_address.html#a6dae7b196e681eb396f1d5c86b499c06">Address::GetNext</a></div><div class="ttdeci">Address * GetNext()</div><div class="ttdoc">Obtiene la siguiente direccion almacenada en el collector (el siguiente nodo de la lista).</div><div class="ttdef"><b>Definition:</b> Collector.cpp:38</div></div>
+<div class="ttc" id="aclass_address_html_aae8982ab33db98cd3d58edb17799df6a"><div class="ttname"><a href="class_address.html#aae8982ab33db98cd3d58edb17799df6a">Address::SetDir</a></div><div class="ttdeci">void SetDir(void *dir)</div><div class="ttdoc">Guarda en el nodo un valor con la direccion de memoria que debe almacenar en su interior.</div><div class="ttdef"><b>Definition:</b> Collector.cpp:30</div></div>
+<div class="ttc" id="aclass_address_html_ae25f4f7e08a3a606c0ead9765d215190"><div class="ttname"><a href="class_address.html#ae25f4f7e08a3a606c0ead9765d215190">Address::SetNext</a></div><div class="ttdeci">void SetNext(Address *next)</div><div class="ttdoc">Agrega referencia a la siguiente direccion almacenada en la lista (al siguiente nodo)....</div><div class="ttdef"><b>Definition:</b> Collector.cpp:22</div></div>
+<div class="ttc" id="aclass_address_html_afe617c80f563af2fd3c75a6f4e5d8d77"><div class="ttname"><a href="class_address.html#afe617c80f563af2fd3c75a6f4e5d8d77">Address::GetDir</a></div><div class="ttdeci">void * GetDir()</div><div class="ttdoc">Obtiene la direccion de memoria almacenada en el nodo Address.</div><div class="ttdef"><b>Definition:</b> Collector.cpp:46</div></div>
+<div class="ttc" id="aclass_collector_html"><div class="ttname"><a href="class_collector.html">Collector</a></div><div class="ttdoc">Definicion y metodos de la clase de collector que esta formada por las direcciones de memoria que fue...</div><div class="ttdef"><b>Definition:</b> Collector.h:27</div></div>
+<div class="ttc" id="aclass_collector_html_a47b2f274b24fe4860ddbe09a3967b01f"><div class="ttname"><a href="class_collector.html#a47b2f274b24fe4860ddbe09a3967b01f">Collector::Show</a></div><div class="ttdeci">void Show()</div><div class="ttdoc">Muestra las direcciones almacenadas en el collector.</div><div class="ttdef"><b>Definition:</b> Collector.cpp:110</div></div>
+<div class="ttc" id="aclass_collector_html_a66e0c5c3c467c197ad9d89f75b1cd690"><div class="ttname"><a href="class_collector.html#a66e0c5c3c467c197ad9d89f75b1cd690">Collector::GetAddress</a></div><div class="ttdeci">void * GetAddress()</div><div class="ttdef"><b>Definition:</b> Collector.cpp:88</div></div>
+<div class="ttc" id="aclass_collector_html_aace8c19a94c92944c4095045cda32975"><div class="ttname"><a href="class_collector.html#aace8c19a94c92944c4095045cda32975">Collector::GetInstance</a></div><div class="ttdeci">static Collector * GetInstance()</div><div class="ttdef"><b>Definition:</b> Collector.cpp:55</div></div>
+<div class="ttc" id="aclass_collector_html_adca392da66de96fa7c4b49ebd35354ab"><div class="ttname"><a href="class_collector.html#adca392da66de96fa7c4b49ebd35354ab">Collector::isEmpty</a></div><div class="ttdeci">bool isEmpty()</div><div class="ttdoc">Verifica si el collector posee direcciones almacenadas.</div><div class="ttdef"><b>Definition:</b> Collector.cpp:101</div></div>
+<div class="ttc" id="aclass_collector_html_ae7cf82d578c916c600653233df4e4fc4"><div class="ttname"><a href="class_collector.html#ae7cf82d578c916c600653233df4e4fc4">Collector::Insert</a></div><div class="ttdeci">void Insert(void *em_address)</div><div class="ttdoc">Metodo para insertar una direccion en el collector. Recibe la direccion de memoria que se desea inser...</div><div class="ttdef"><b>Definition:</b> Collector.cpp:66</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

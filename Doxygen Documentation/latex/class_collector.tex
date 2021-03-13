@@ -1,0 +1,95 @@
+\hypertarget{class_collector}{}\doxysection{Referencia de la Clase Collector}
+\label{class_collector}\index{Collector@{Collector}}
+
+
+Definicion y metodos de la clase de collector que esta formada por las direcciones de memoria que fueron liberadas.  
+
+
+
+
+{\ttfamily \#include $<$Collector.\+h$>$}
+
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_collector_ae7cf82d578c916c600653233df4e4fc4}{Insert}} (void $\ast$em\+\_\+address)
+\begin{DoxyCompactList}\small\item\em Metodo para insertar una direccion en el collector. Recibe la direccion de memoria que se desea insertar. \end{DoxyCompactList}\item 
+void $\ast$ \mbox{\hyperlink{class_collector_a66e0c5c3c467c197ad9d89f75b1cd690}{Get\+Address}} ()
+\item 
+void \mbox{\hyperlink{class_collector_a47b2f274b24fe4860ddbe09a3967b01f}{Show}} ()
+\begin{DoxyCompactList}\small\item\em Muestra las direcciones almacenadas en el collector. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_collector_adca392da66de96fa7c4b49ebd35354ab}{is\+Empty}} ()
+\begin{DoxyCompactList}\small\item\em Verifica si el collector posee direcciones almacenadas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Métodos públicos estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_collector}{Collector}} $\ast$ \mbox{\hyperlink{class_collector_aace8c19a94c92944c4095045cda32975}{Get\+Instance}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Definicion y metodos de la clase de collector que esta formada por las direcciones de memoria que fueron liberadas. 
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_collector_a66e0c5c3c467c197ad9d89f75b1cd690}\label{class_collector_a66e0c5c3c467c197ad9d89f75b1cd690}} 
+\index{Collector@{Collector}!GetAddress@{GetAddress}}
+\index{GetAddress@{GetAddress}!Collector@{Collector}}
+\doxysubsubsection{\texorpdfstring{GetAddress()}{GetAddress()}}
+{\footnotesize\ttfamily void $\ast$ Collector\+::\+Get\+Address (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Obtiene la primera direccion que se inserto en el collector, la retorna y elimina de la lista. \begin{DoxyReturn}{Devuelve}
+La direccion en moemoria que se encontraba de primera. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_collector_aace8c19a94c92944c4095045cda32975}\label{class_collector_aace8c19a94c92944c4095045cda32975}} 
+\index{Collector@{Collector}!GetInstance@{GetInstance}}
+\index{GetInstance@{GetInstance}!Collector@{Collector}}
+\doxysubsubsection{\texorpdfstring{GetInstance()}{GetInstance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_collector}{Collector}} $\ast$ Collector\+::\+Get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Metodo para convertir la clase Collecotor en un singleton y que sea una sola lista solamente en el programa. \begin{DoxyReturn}{Devuelve}
+Instancia de \mbox{\hyperlink{class_collector}{Collector}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_collector_ae7cf82d578c916c600653233df4e4fc4}\label{class_collector_ae7cf82d578c916c600653233df4e4fc4}} 
+\index{Collector@{Collector}!Insert@{Insert}}
+\index{Insert@{Insert}!Collector@{Collector}}
+\doxysubsubsection{\texorpdfstring{Insert()}{Insert()}}
+{\footnotesize\ttfamily void Collector\+::\+Insert (\begin{DoxyParamCaption}\item[{void $\ast$}]{em\+\_\+address }\end{DoxyParamCaption})}
+
+
+
+Metodo para insertar una direccion en el collector. Recibe la direccion de memoria que se desea insertar. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em em\+\_\+address} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_collector_adca392da66de96fa7c4b49ebd35354ab}\label{class_collector_adca392da66de96fa7c4b49ebd35354ab}} 
+\index{Collector@{Collector}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!Collector@{Collector}}
+\doxysubsubsection{\texorpdfstring{isEmpty()}{isEmpty()}}
+{\footnotesize\ttfamily bool Collector\+::is\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Verifica si el collector posee direcciones almacenadas. 
+
+\begin{DoxyReturn}{Devuelve}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_collector_a47b2f274b24fe4860ddbe09a3967b01f}\label{class_collector_a47b2f274b24fe4860ddbe09a3967b01f}} 
+\index{Collector@{Collector}!Show@{Show}}
+\index{Show@{Show}!Collector@{Collector}}
+\doxysubsubsection{\texorpdfstring{Show()}{Show()}}
+{\footnotesize\ttfamily void Collector\+::\+Show (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Muestra las direcciones almacenadas en el collector. 
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_collector_8h}{Collector.\+h}}\item 
+\mbox{\hyperlink{_collector_8cpp}{Collector.\+cpp}}\end{DoxyCompactItemize}

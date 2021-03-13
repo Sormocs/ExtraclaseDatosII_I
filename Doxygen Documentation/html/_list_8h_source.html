@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Extraclase 1 Datos II: Fichero Fuente List.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Extraclase 1 Datos II
+   </div>
+   <div id="projectbrief">Lista enlazada que recicla direcciones de nodos eliminados.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">List.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_list_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_node_8h.html">Node.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_collector_8h.html">Collector.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_list.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_list.html">List</a> {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="class_node.html">Node</a> *start = NULL;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="class_node.html">Node</a> *end = NULL;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="comment">//static Collector *collector;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="class_list.html#a64d878a92d11f7c63c70cbe4e7dd4176">List</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_list.html#a6996cba92e6e24e98317a4a906356b7d">Insert</a>(<span class="keywordtype">int</span> num);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_list.html#ae994ff445f9d90cb970a8fac03650312">InsertFirst</a>(<span class="keywordtype">int</span> num);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_list.html#a79fa19c179643968edd7a6810f8e2ce2">Delete</a>(<span class="keywordtype">int</span> num);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_list.html#a6a60372361046c0731aafd9459ea6c58">Show</a>();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_list.html#aa8e167e384e8543bc24d070fff8a36cf">ShowC</a>();</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_list.html#a3d0be3fc2459d15e5d7982c9d188aaa5">   28</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="class_collector.html">Collector</a>* <a class="code" href="class_list.html#a3d0be3fc2459d15e5d7982c9d188aaa5">GetCollector</a>();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;};</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="ttc" id="a_collector_8h_html"><div class="ttname"><a href="_collector_8h.html">Collector.h</a></div><div class="ttdoc">Declaraciones de metodos y atributos para las clases address y collector.</div></div>
+<div class="ttc" id="a_node_8h_html"><div class="ttname"><a href="_node_8h.html">Node.h</a></div><div class="ttdoc">Header donde se declara la clase del nodo que compone a list.</div></div>
+<div class="ttc" id="aclass_collector_html"><div class="ttname"><a href="class_collector.html">Collector</a></div><div class="ttdoc">Definicion y metodos de la clase de collector que esta formada por las direcciones de memoria que fue...</div><div class="ttdef"><b>Definition:</b> Collector.h:27</div></div>
+<div class="ttc" id="aclass_list_html"><div class="ttname"><a href="class_list.html">List</a></div><div class="ttdoc">Declaracion de la clase lista, que contiene a los numeros que se ingresen en la misma....</div><div class="ttdef"><b>Definition:</b> List.h:14</div></div>
+<div class="ttc" id="aclass_list_html_a3d0be3fc2459d15e5d7982c9d188aaa5"><div class="ttname"><a href="class_list.html#a3d0be3fc2459d15e5d7982c9d188aaa5">List::GetCollector</a></div><div class="ttdeci">static Collector * GetCollector()</div></div>
+<div class="ttc" id="aclass_list_html_a64d878a92d11f7c63c70cbe4e7dd4176"><div class="ttname"><a href="class_list.html#a64d878a92d11f7c63c70cbe4e7dd4176">List::List</a></div><div class="ttdeci">List()</div><div class="ttdoc">Constructor de la clase lista.</div><div class="ttdef"><b>Definition:</b> List.cpp:13</div></div>
+<div class="ttc" id="aclass_list_html_a6996cba92e6e24e98317a4a906356b7d"><div class="ttname"><a href="class_list.html#a6996cba92e6e24e98317a4a906356b7d">List::Insert</a></div><div class="ttdeci">void Insert(int num)</div><div class="ttdoc">Inserta el numero introducido a la lista enlazada. Recibe un entero.</div><div class="ttdef"><b>Definition:</b> List.cpp:19</div></div>
+<div class="ttc" id="aclass_list_html_a6a60372361046c0731aafd9459ea6c58"><div class="ttname"><a href="class_list.html#a6a60372361046c0731aafd9459ea6c58">List::Show</a></div><div class="ttdeci">void Show()</div><div class="ttdoc">Metodo show para mostrar los elementos de la lista junto con la direccion de memoria en la que se enc...</div><div class="ttdef"><b>Definition:</b> List.cpp:85</div></div>
+<div class="ttc" id="aclass_list_html_a79fa19c179643968edd7a6810f8e2ce2"><div class="ttname"><a href="class_list.html#a79fa19c179643968edd7a6810f8e2ce2">List::Delete</a></div><div class="ttdeci">void Delete(int num)</div><div class="ttdoc">Metodo delete para eliminar un numero de la lista y enviar la direccion que contenia su nodo al colle...</div><div class="ttdef"><b>Definition:</b> List.cpp:66</div></div>
+<div class="ttc" id="aclass_list_html_aa8e167e384e8543bc24d070fff8a36cf"><div class="ttname"><a href="class_list.html#aa8e167e384e8543bc24d070fff8a36cf">List::ShowC</a></div><div class="ttdeci">void ShowC()</div><div class="ttdoc">Metodo que llama al metodo show del collector para mostrar las direcciones dentro de collector.</div><div class="ttdef"><b>Definition:</b> List.cpp:98</div></div>
+<div class="ttc" id="aclass_list_html_ae994ff445f9d90cb970a8fac03650312"><div class="ttname"><a href="class_list.html#ae994ff445f9d90cb970a8fac03650312">List::InsertFirst</a></div><div class="ttdeci">void InsertFirst(int num)</div><div class="ttdoc">Misma funcionalidad del metodo regular de Insert, pero esta lo inserta al inicio de la lista....</div><div class="ttdef"><b>Definition:</b> List.cpp:41</div></div>
+<div class="ttc" id="aclass_node_html"><div class="ttname"><a href="class_node.html">Node</a></div><div class="ttdoc">Clase nodo que almacena un numero que se inserto en list y contiene una referencia al siguiente nodo ...</div><div class="ttdef"><b>Definition:</b> Node.h:12</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

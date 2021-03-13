@@ -30,15 +30,6 @@ int main() {
     lista->Insert(7);
     lista->Show();
 
-//    lista->Insert(2);
-//    lista->Show();
-//    lista->ShowC();
-//    lista->Delete(2);
-//    lista->ShowC();
-//    lista->Insert(2);
-//    lista->Show();
-//    lista->ShowC();
-
 
     return 0;
 }

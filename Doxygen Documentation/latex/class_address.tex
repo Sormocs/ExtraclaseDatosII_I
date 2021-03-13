@@ -1,0 +1,105 @@
+\hypertarget{class_address}{}\doxysection{Referencia de la Clase Address}
+\label{class_address}\index{Address@{Address}}
+
+
+Clase address que representa los nodos de la lista enlazada que constituye al collector.  
+
+
+
+
+{\ttfamily \#include $<$Collector.\+h$>$}
+
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_address_a63f910c09d93bdd16d3744e47d13dc0e}{Address}} ()
+\begin{DoxyCompactList}\small\item\em Constructor del address. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_address_aae8982ab33db98cd3d58edb17799df6a}{Set\+Dir}} (void $\ast$dir)
+\begin{DoxyCompactList}\small\item\em Guarda en el nodo un valor con la direccion de memoria que debe almacenar en su interior. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_address_ae25f4f7e08a3a606c0ead9765d215190}{Set\+Next}} (\mbox{\hyperlink{class_address}{Address}} $\ast$next)
+\begin{DoxyCompactList}\small\item\em Agrega referencia a la siguiente direccion almacenada en la lista (al siguiente nodo). Recibe un puntero con la direcci\textquotesingle{}on al siguiente nodo de la lista. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_address}{Address}} $\ast$ \mbox{\hyperlink{class_address_a6dae7b196e681eb396f1d5c86b499c06}{Get\+Next}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene la siguiente direccion almacenada en el collector (el siguiente nodo de la lista). \end{DoxyCompactList}\item 
+void $\ast$ \mbox{\hyperlink{class_address_afe617c80f563af2fd3c75a6f4e5d8d77}{Get\+Dir}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene la direccion de memoria almacenada en el nodo \mbox{\hyperlink{class_address}{Address}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Clase address que representa los nodos de la lista enlazada que constituye al collector. 
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_address_a63f910c09d93bdd16d3744e47d13dc0e}\label{class_address_a63f910c09d93bdd16d3744e47d13dc0e}} 
+\index{Address@{Address}!Address@{Address}}
+\index{Address@{Address}!Address@{Address}}
+\doxysubsubsection{\texorpdfstring{Address()}{Address()}}
+{\footnotesize\ttfamily Address\+::\+Address (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor del address. 
+
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_address_afe617c80f563af2fd3c75a6f4e5d8d77}\label{class_address_afe617c80f563af2fd3c75a6f4e5d8d77}} 
+\index{Address@{Address}!GetDir@{GetDir}}
+\index{GetDir@{GetDir}!Address@{Address}}
+\doxysubsubsection{\texorpdfstring{GetDir()}{GetDir()}}
+{\footnotesize\ttfamily void $\ast$ Address\+::\+Get\+Dir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Obtiene la direccion de memoria almacenada en el nodo \mbox{\hyperlink{class_address}{Address}}. 
+
+\begin{DoxyReturn}{Devuelve}
+Una direccion de memoria que fue utilizada y liberada. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_address_a6dae7b196e681eb396f1d5c86b499c06}\label{class_address_a6dae7b196e681eb396f1d5c86b499c06}} 
+\index{Address@{Address}!GetNext@{GetNext}}
+\index{GetNext@{GetNext}!Address@{Address}}
+\doxysubsubsection{\texorpdfstring{GetNext()}{GetNext()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_address}{Address}} $\ast$ Address\+::\+Get\+Next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Obtiene la siguiente direccion almacenada en el collector (el siguiente nodo de la lista). 
+
+\begin{DoxyReturn}{Devuelve}
+Objeto del tipo Adress 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_address_aae8982ab33db98cd3d58edb17799df6a}\label{class_address_aae8982ab33db98cd3d58edb17799df6a}} 
+\index{Address@{Address}!SetDir@{SetDir}}
+\index{SetDir@{SetDir}!Address@{Address}}
+\doxysubsubsection{\texorpdfstring{SetDir()}{SetDir()}}
+{\footnotesize\ttfamily void Address\+::\+Set\+Dir (\begin{DoxyParamCaption}\item[{void $\ast$}]{dir\+\_\+in }\end{DoxyParamCaption})}
+
+
+
+Guarda en el nodo un valor con la direccion de memoria que debe almacenar en su interior. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em dir\+\_\+in} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_address_ae25f4f7e08a3a606c0ead9765d215190}\label{class_address_ae25f4f7e08a3a606c0ead9765d215190}} 
+\index{Address@{Address}!SetNext@{SetNext}}
+\index{SetNext@{SetNext}!Address@{Address}}
+\doxysubsubsection{\texorpdfstring{SetNext()}{SetNext()}}
+{\footnotesize\ttfamily void Address\+::\+Set\+Next (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_address}{Address}} $\ast$}]{next\+\_\+dir }\end{DoxyParamCaption})}
+
+
+
+Agrega referencia a la siguiente direccion almacenada en la lista (al siguiente nodo). Recibe un puntero con la direcci\textquotesingle{}on al siguiente nodo de la lista. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em next\+\_\+dir} & \\
+\hline
+\end{DoxyParams}
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_collector_8h}{Collector.\+h}}\item 
+\mbox{\hyperlink{_collector_8cpp}{Collector.\+cpp}}\end{DoxyCompactItemize}

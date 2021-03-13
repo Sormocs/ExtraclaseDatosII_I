@@ -1,0 +1,145 @@
+\hypertarget{class_node}{}\doxysection{Referencia de la Clase Node}
+\label{class_node}\index{Node@{Node}}
+
+
+Clase nodo que almacena un numero que se inserto en list y contiene una referencia al siguiente nodo de list.  
+
+
+
+
+{\ttfamily \#include $<$Node.\+h$>$}
+
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_node_ad7a34779cad45d997bfd6d3d8043c75f}{Node}} ()
+\begin{DoxyCompactList}\small\item\em Constructor de la clase nodo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_node_a2eba7dca03b99933e1eb48916d7b4374}{Set\+Num}} (int num)
+\begin{DoxyCompactList}\small\item\em Metodo para asignar un numero al nodo, ya sea por primera vez o cambiarlo. Recibe el numero. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_node_a62470e684ea2d8fb158bc0167a95d922}{Get\+Num}} ()
+\begin{DoxyCompactList}\small\item\em Metodo para obtener el int que almacena el nodo. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_node}{Node}} $\ast$ \mbox{\hyperlink{class_node_a6f8729374beb27838792dc6ef81124e8}{Get\+Next}} ()
+\begin{DoxyCompactList}\small\item\em Metodo para obtener el siguiente nodo de la lista. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_node_ad42b093c5defbc14372468f669e2c102}{Set\+Next}} (\mbox{\hyperlink{class_node}{Node}} $\ast$node)
+\begin{DoxyCompactList}\small\item\em Asigna la referencia al siguiente nodo de la lista. Recibe la direccion al nodo que le sigue como parametro. \end{DoxyCompactList}\item 
+void $\ast$ \mbox{\hyperlink{class_node_a3b3efa299855ac9ed91ad57c8e15dfab}{operator new}} (size\+\_\+t size, void $\ast$)
+\begin{DoxyCompactList}\small\item\em Metodo de overload del metodo new para que seleccione una direccion del collector o genere una nueva si no hay, recibe el size por default y el address de parte del collector. Esta es NULL si esta vacio. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_node_a183e85fb6a26d43b0e752a725f1c06f8}{operator delete}} (void $\ast$)
+\begin{DoxyCompactList}\small\item\em Overload del metodo delete declarado en \mbox{\hyperlink{_node_8h}{Node.\+h}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Clase nodo que almacena un numero que se inserto en list y contiene una referencia al siguiente nodo de list. 
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_node_ad7a34779cad45d997bfd6d3d8043c75f}\label{class_node_ad7a34779cad45d997bfd6d3d8043c75f}} 
+\index{Node@{Node}!Node@{Node}}
+\index{Node@{Node}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{Node()}{Node()}}
+{\footnotesize\ttfamily Node\+::\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor de la clase nodo. 
+
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_node_a6f8729374beb27838792dc6ef81124e8}\label{class_node_a6f8729374beb27838792dc6ef81124e8}} 
+\index{Node@{Node}!GetNext@{GetNext}}
+\index{GetNext@{GetNext}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{GetNext()}{GetNext()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_node}{Node}} $\ast$ Node\+::\+Get\+Next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Metodo para obtener el siguiente nodo de la lista. 
+
+\begin{DoxyReturn}{Devuelve}
+Objeto tipo Nodo 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_node_a62470e684ea2d8fb158bc0167a95d922}\label{class_node_a62470e684ea2d8fb158bc0167a95d922}} 
+\index{Node@{Node}!GetNum@{GetNum}}
+\index{GetNum@{GetNum}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{GetNum()}{GetNum()}}
+{\footnotesize\ttfamily int Node\+::\+Get\+Num (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Metodo para obtener el int que almacena el nodo. 
+
+\begin{DoxyReturn}{Devuelve}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_node_a183e85fb6a26d43b0e752a725f1c06f8}\label{class_node_a183e85fb6a26d43b0e752a725f1c06f8}} 
+\index{Node@{Node}!operator delete@{operator delete}}
+\index{operator delete@{operator delete}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{operator delete()}{operator delete()}}
+{\footnotesize\ttfamily void Node\+::operator delete (\begin{DoxyParamCaption}\item[{void $\ast$}]{del\+\_\+dir }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Overload del metodo delete declarado en \mbox{\hyperlink{_node_8h}{Node.\+h}}. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em del\+\_\+dir} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_node_a3b3efa299855ac9ed91ad57c8e15dfab}\label{class_node_a3b3efa299855ac9ed91ad57c8e15dfab}} 
+\index{Node@{Node}!operator new@{operator new}}
+\index{operator new@{operator new}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{operator new()}{operator new()}}
+{\footnotesize\ttfamily void $\ast$ Node\+::operator new (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size,  }\item[{void $\ast$}]{address }\end{DoxyParamCaption})}
+
+
+
+Metodo de overload del metodo new para que seleccione una direccion del collector o genere una nueva si no hay, recibe el size por default y el address de parte del collector. Esta es NULL si esta vacio. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em size} & \\
+\hline
+{\em address} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Direccion en memoria para el objeto instanciado. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_node_ad42b093c5defbc14372468f669e2c102}\label{class_node_ad42b093c5defbc14372468f669e2c102}} 
+\index{Node@{Node}!SetNext@{SetNext}}
+\index{SetNext@{SetNext}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{SetNext()}{SetNext()}}
+{\footnotesize\ttfamily void Node\+::\+Set\+Next (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_node}{Node}} $\ast$}]{in\+\_\+node }\end{DoxyParamCaption})}
+
+
+
+Asigna la referencia al siguiente nodo de la lista. Recibe la direccion al nodo que le sigue como parametro. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em in\+\_\+node} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_node_a2eba7dca03b99933e1eb48916d7b4374}\label{class_node_a2eba7dca03b99933e1eb48916d7b4374}} 
+\index{Node@{Node}!SetNum@{SetNum}}
+\index{SetNum@{SetNum}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{SetNum()}{SetNum()}}
+{\footnotesize\ttfamily void Node\+::\+Set\+Num (\begin{DoxyParamCaption}\item[{int}]{in\+\_\+num }\end{DoxyParamCaption})}
+
+
+
+Metodo para asignar un numero al nodo, ya sea por primera vez o cambiarlo. Recibe el numero. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em in\+\_\+num} & \\
+\hline
+\end{DoxyParams}
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_node_8h}{Node.\+h}}\item 
+\mbox{\hyperlink{_list_8cpp}{List.\+cpp}}\item 
+\mbox{\hyperlink{_node_8cpp}{Node.\+cpp}}\end{DoxyCompactItemize}

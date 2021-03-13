@@ -1,0 +1,127 @@
+\hypertarget{class_list}{}\doxysection{Referencia de la Clase List}
+\label{class_list}\index{List@{List}}
+
+
+Declaracion de la clase lista, que contiene a los numeros que se ingresen en la misma. Contiene instancaias de la clase nodo.  
+
+
+
+
+{\ttfamily \#include $<$List.\+h$>$}
+
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_list_a64d878a92d11f7c63c70cbe4e7dd4176}{List}} ()
+\begin{DoxyCompactList}\small\item\em Constructor de la clase lista. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_list_a6996cba92e6e24e98317a4a906356b7d}{Insert}} (int num)
+\begin{DoxyCompactList}\small\item\em Inserta el numero introducido a la lista enlazada. Recibe un entero. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_list_ae994ff445f9d90cb970a8fac03650312}{Insert\+First}} (int num)
+\begin{DoxyCompactList}\small\item\em Misma funcionalidad del metodo regular de Insert, pero esta lo inserta al inicio de la lista. Recibe el int. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_list_a79fa19c179643968edd7a6810f8e2ce2}{Delete}} (int num)
+\begin{DoxyCompactList}\small\item\em Metodo delete para eliminar un numero de la lista y enviar la direccion que contenia su nodo al collector para que sea reciclada. Recibe el numero que se desea eliminar. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_list_a6a60372361046c0731aafd9459ea6c58}{Show}} ()
+\begin{DoxyCompactList}\small\item\em Metodo show para mostrar los elementos de la lista junto con la direccion de memoria en la que se encuentran. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_list_aa8e167e384e8543bc24d070fff8a36cf}{ShowC}} ()
+\begin{DoxyCompactList}\small\item\em Metodo que llama al metodo show del collector para mostrar las direcciones dentro de collector. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Métodos públicos estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_collector}{Collector}} $\ast$ \mbox{\hyperlink{class_list_a3d0be3fc2459d15e5d7982c9d188aaa5}{Get\+Collector}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Declaracion de la clase lista, que contiene a los numeros que se ingresen en la misma. Contiene instancaias de la clase nodo. 
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_list_a64d878a92d11f7c63c70cbe4e7dd4176}\label{class_list_a64d878a92d11f7c63c70cbe4e7dd4176}} 
+\index{List@{List}!List@{List}}
+\index{List@{List}!List@{List}}
+\doxysubsubsection{\texorpdfstring{List()}{List()}}
+{\footnotesize\ttfamily List\+::\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor de la clase lista. 
+
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_list_a79fa19c179643968edd7a6810f8e2ce2}\label{class_list_a79fa19c179643968edd7a6810f8e2ce2}} 
+\index{List@{List}!Delete@{Delete}}
+\index{Delete@{Delete}!List@{List}}
+\doxysubsubsection{\texorpdfstring{Delete()}{Delete()}}
+{\footnotesize\ttfamily void List\+::\+Delete (\begin{DoxyParamCaption}\item[{int}]{num }\end{DoxyParamCaption})}
+
+
+
+Metodo delete para eliminar un numero de la lista y enviar la direccion que contenia su nodo al collector para que sea reciclada. Recibe el numero que se desea eliminar. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em num} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_list_a3d0be3fc2459d15e5d7982c9d188aaa5}\label{class_list_a3d0be3fc2459d15e5d7982c9d188aaa5}} 
+\index{List@{List}!GetCollector@{GetCollector}}
+\index{GetCollector@{GetCollector}!List@{List}}
+\doxysubsubsection{\texorpdfstring{GetCollector()}{GetCollector()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_collector}{Collector}}$\ast$ List\+::\+Get\+Collector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_list_a6996cba92e6e24e98317a4a906356b7d}\label{class_list_a6996cba92e6e24e98317a4a906356b7d}} 
+\index{List@{List}!Insert@{Insert}}
+\index{Insert@{Insert}!List@{List}}
+\doxysubsubsection{\texorpdfstring{Insert()}{Insert()}}
+{\footnotesize\ttfamily void List\+::\+Insert (\begin{DoxyParamCaption}\item[{int}]{in\+\_\+num }\end{DoxyParamCaption})}
+
+
+
+Inserta el numero introducido a la lista enlazada. Recibe un entero. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em in\+\_\+num} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_list_ae994ff445f9d90cb970a8fac03650312}\label{class_list_ae994ff445f9d90cb970a8fac03650312}} 
+\index{List@{List}!InsertFirst@{InsertFirst}}
+\index{InsertFirst@{InsertFirst}!List@{List}}
+\doxysubsubsection{\texorpdfstring{InsertFirst()}{InsertFirst()}}
+{\footnotesize\ttfamily void List\+::\+Insert\+First (\begin{DoxyParamCaption}\item[{int}]{in\+\_\+num }\end{DoxyParamCaption})}
+
+
+
+Misma funcionalidad del metodo regular de Insert, pero esta lo inserta al inicio de la lista. Recibe el int. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em in\+\_\+num} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_list_a6a60372361046c0731aafd9459ea6c58}\label{class_list_a6a60372361046c0731aafd9459ea6c58}} 
+\index{List@{List}!Show@{Show}}
+\index{Show@{Show}!List@{List}}
+\doxysubsubsection{\texorpdfstring{Show()}{Show()}}
+{\footnotesize\ttfamily void List\+::\+Show (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Metodo show para mostrar los elementos de la lista junto con la direccion de memoria en la que se encuentran. 
+
+\mbox{\Hypertarget{class_list_aa8e167e384e8543bc24d070fff8a36cf}\label{class_list_aa8e167e384e8543bc24d070fff8a36cf}} 
+\index{List@{List}!ShowC@{ShowC}}
+\index{ShowC@{ShowC}!List@{List}}
+\doxysubsubsection{\texorpdfstring{ShowC()}{ShowC()}}
+{\footnotesize\ttfamily void List\+::\+ShowC (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Metodo que llama al metodo show del collector para mostrar las direcciones dentro de collector. 
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_list_8h}{List.\+h}}\item 
+\mbox{\hyperlink{_list_8cpp}{List.\+cpp}}\end{DoxyCompactItemize}

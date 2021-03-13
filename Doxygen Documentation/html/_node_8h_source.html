@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Extraclase 1 Datos II: Fichero Fuente Node.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Extraclase 1 Datos II
+   </div>
+   <div id="projectbrief">Lista enlazada que recicla direcciones de nodos eliminados.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Node.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_node_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_collector_8h.html">Collector.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_node.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_node.html">Node</a> {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">int</span> num;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="class_node.html">Node</a> *next;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="class_node.html#ad7a34779cad45d997bfd6d3d8043c75f">Node</a>();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_node.html#a2eba7dca03b99933e1eb48916d7b4374">SetNum</a>(<span class="keywordtype">int</span> num);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_node.html#a62470e684ea2d8fb158bc0167a95d922">GetNum</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="class_node.html">Node</a> * <a class="code" href="class_node.html#a6f8729374beb27838792dc6ef81124e8">GetNext</a>();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_node.html#ad42b093c5defbc14372468f669e2c102">SetNext</a>(<a class="code" href="class_node.html">Node</a> *node);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span>* <span class="keyword">operator</span> <span class="keyword">new</span>(<span class="keywordtype">size_t</span> size, <span class="keywordtype">void</span>*);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> <span class="keyword">operator</span> <span class="keyword">delete</span>(<span class="keywordtype">void</span>*);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;};</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="ttc" id="a_collector_8h_html"><div class="ttname"><a href="_collector_8h.html">Collector.h</a></div><div class="ttdoc">Declaraciones de metodos y atributos para las clases address y collector.</div></div>
+<div class="ttc" id="aclass_node_html"><div class="ttname"><a href="class_node.html">Node</a></div><div class="ttdoc">Clase nodo que almacena un numero que se inserto en list y contiene una referencia al siguiente nodo ...</div><div class="ttdef"><b>Definition:</b> Node.h:12</div></div>
+<div class="ttc" id="aclass_node_html_a2eba7dca03b99933e1eb48916d7b4374"><div class="ttname"><a href="class_node.html#a2eba7dca03b99933e1eb48916d7b4374">Node::SetNum</a></div><div class="ttdeci">void SetNum(int num)</div><div class="ttdoc">Metodo para asignar un numero al nodo, ya sea por primera vez o cambiarlo. Recibe el numero.</div><div class="ttdef"><b>Definition:</b> Node.cpp:27</div></div>
+<div class="ttc" id="aclass_node_html_a62470e684ea2d8fb158bc0167a95d922"><div class="ttname"><a href="class_node.html#a62470e684ea2d8fb158bc0167a95d922">Node::GetNum</a></div><div class="ttdeci">int GetNum()</div><div class="ttdoc">Metodo para obtener el int que almacena el nodo.</div><div class="ttdef"><b>Definition:</b> Node.cpp:19</div></div>
+<div class="ttc" id="aclass_node_html_a6f8729374beb27838792dc6ef81124e8"><div class="ttname"><a href="class_node.html#a6f8729374beb27838792dc6ef81124e8">Node::GetNext</a></div><div class="ttdeci">Node * GetNext()</div><div class="ttdoc">Metodo para obtener el siguiente nodo de la lista.</div><div class="ttdef"><b>Definition:</b> Node.cpp:43</div></div>
+<div class="ttc" id="aclass_node_html_ad42b093c5defbc14372468f669e2c102"><div class="ttname"><a href="class_node.html#ad42b093c5defbc14372468f669e2c102">Node::SetNext</a></div><div class="ttdeci">void SetNext(Node *node)</div><div class="ttdoc">Asigna la referencia al siguiente nodo de la lista. Recibe la direccion al nodo que le sigue como par...</div><div class="ttdef"><b>Definition:</b> Node.cpp:35</div></div>
+<div class="ttc" id="aclass_node_html_ad7a34779cad45d997bfd6d3d8043c75f"><div class="ttname"><a href="class_node.html#ad7a34779cad45d997bfd6d3d8043c75f">Node::Node</a></div><div class="ttdeci">Node()</div><div class="ttdoc">Constructor de la clase nodo.</div><div class="ttdef"><b>Definition:</b> Node.cpp:12</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>
